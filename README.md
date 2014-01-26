@@ -13,7 +13,7 @@ take a look at mock.json, that is what gets converted into the HTML that then po
 how it works:
 -------------
 
-tagr makes dom elements from formatted JSON via "__element__" and "__contains__" properties
+tagr makes dom elements from formatted JSON via "\__element__" and "\__contains__" properties
 
 "__element__" values are valid HTML elements, including div, span, input, etc
 assign id's, classes, events and otherwise use $ object creation syntax like this
