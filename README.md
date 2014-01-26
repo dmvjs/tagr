@@ -19,12 +19,14 @@ __element__ values are valid HTML elements, including div, span, input, etc
 assign id's, classes, events and otherwise use $ object creation syntax like this
 (property names are not required to have double quotes unless JSON specific):
 
+'''
 {
   "__element__": "div"
   "click": function(e){alert("YES")},
   "id": "test",
   "addClass": "clickable"
 }
+'''
 
 __contains__ values should be another array of objects formatted like the above, where
 the parent object will contain the child in the rendered HTML (pretty obvious)
