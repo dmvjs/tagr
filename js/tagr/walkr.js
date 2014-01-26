@@ -15,8 +15,8 @@ define(["jquery", "tagr/tagr", "tagr/config"], function($, tagr, config) {
             if (element[key]["__function__"]) {
               if (allow) {
                 var f = element[key]["__function__"];
-                options[key] = (f.substr(0, 8) === "function") ? (new Function('return ' + f)()) :
-                  (new Function('return ' + f));
+                options[key] = (f.substr(0, 8) === "function") ? (new Function("return " + f)()) :
+                  (new Function("return " + f));
               }
             } else {
               options[key] = element[key]

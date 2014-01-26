@@ -1,15 +1,15 @@
 requirejs.config({
-  baseUrl: 'js/lib',
+  baseUrl: "js/lib",
   paths: {
-    tagr: '../tagr'
+    tagr: "../tagr"
   }
 });
 
-requirejs(['jquery', 'tagr/tagr', 'tagr/walkr'],
+requirejs(["jquery", "tagr/tagr", "tagr/walkr"],
   function ($, tagr, walkr) {
     $.ajax({
-      url: 'js/mock.json',
-      dataType: 'json',
+      url: "js/mock.json",
+      dataType: "json",
       success: onDataLoaded
     });
 
