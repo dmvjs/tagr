@@ -5,8 +5,8 @@ requirejs.config({
   }
 });
 
-requirejs(['jquery', 'tagr/tagr', 'tagr/parsr'],
-  function ($, tagr, parsr) {
+requirejs(['jquery', 'tagr/tagr', 'tagr/walkr'],
+  function ($, tagr, walkr) {
     $.ajax({
       url: 'js/mock.json',
       dataType: 'json',
@@ -14,7 +14,7 @@ requirejs(['jquery', 'tagr/tagr', 'tagr/parsr'],
     });
 
     function onDataLoaded(data) {
-      $(data).each(parsr);
+      $(data).each(walkr);
     }
   }
 );
