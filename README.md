@@ -21,12 +21,13 @@ Assign id's, classes, events and otherwise use $ object creation syntax.
 ```
 {
   __element__: "div"
-  click: function(e){alert("YES")},
+  click: function(){alert("TAGR ELEMENT CLICKED")},
   id: "test",
   addClass: "clickable"
 }
 ```
 Note: this example uses a JS native object, JSON format differs slightly:
+
 1. double quotes are required for property names, inner double quotes must be escaped
 2. passing functions requires a different syntax, detailed below in 'passing functions'
 
@@ -39,6 +40,8 @@ if no "\__parent__" property exists, the parent is $(document.body)
 
 passing functions
 -----------------
+
+NOTE: Passing functions from JSON is disabled by default. Enable this in tagr/config.js if you dare.
 
 Passing functions with JS objects is easy and uses $ object creation syntax as above.
 JSON is a transport layer where functions are not allowed as a native transport object like numbers or booleans.
@@ -58,5 +61,3 @@ Alternatively a single statement can be passed as follows.
       "__function__": "alert('TAGR JSON EVENT')"
     },
 ```
-
-Passing functions via JSON might get disabled by default with an option to enable.
