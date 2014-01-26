@@ -2,6 +2,9 @@
   {
     "__element__": "div",
     "addClass": "example",
+    "click" : {
+      "__function__": "function() {alert('CLICK')}"
+    },
     "css": {
       "border": "2px solid red"
     },
@@ -31,6 +34,9 @@
   {
     "__element__": "div",
     "addClass": "example",
+    "click" : {
+      "__function__": "alert('CLICKXX')"
+    },
     "css": {
       "border": "2px solid red"
     },
