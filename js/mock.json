@@ -35,7 +35,7 @@
     "__element__": "div",
     "addClass": "example",
     "click" : {
-      "__function__": "alert('CLICKXX')"
+      "__function__": "alert('TAGR ELEMENT CLICKED')"
     },
     "css": {
       "border": "2px solid red"
