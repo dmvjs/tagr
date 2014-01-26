@@ -1,0 +1,60 @@
+[
+  {
+    "element": "div",
+    "addClass": "example",
+    "css": {
+      "border": "2px solid red"
+    },
+    "contains": [{
+      "element": "input",
+      "placeholder": "This is an input"
+    }, {
+      "element": "div",
+      "text": "This is a div.",
+      "css": {
+        "padding": "20px",
+        "backgroundColor": "yellow"
+      },
+      "contains": [{
+        "element": "div",
+        "text": "This is another DIV"
+      }, {
+        "element": "div",
+        "css": {
+          "backgroundColor": "blue",
+          "color": "white"
+        },
+        "text": "This is another another div."
+      }]
+    }]
+  },
+  {
+    "element": "div",
+    "addClass": "example",
+    "css": {
+      "border": "2px solid red"
+    },
+    "contains": [{
+      "element": "input",
+      "placeholder": "This is an input"
+    }, {
+      "element": "div",
+      "text": "This is a div.",
+      "css": {
+        "padding": "20px",
+        "backgroundColor": "yellow"
+      },
+      "contains": [{
+        "element": "div",
+        "text": "This is another DIV"
+      }, {
+        "element": "div",
+        "css": {
+          "backgroundColor": "blue",
+          "color": "white"
+        },
+        "text": "This is another another div."
+      }]
+    }]
+  }
+]
