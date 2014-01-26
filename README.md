@@ -9,7 +9,6 @@ a quick tour:
 check it out, start a server. open in browser. index.html (which has an empty body) loads the app.
 app.js requires jquery and the tagr files tagr and walkr and gets js/mock.json
 take a look at mock.json, that is what gets converted into the HTML that then populates the index.html body
-https://github.com/dmvjs/tagr/blob/master/js/mock.json
 
 how it works:
 -------------
