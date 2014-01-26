@@ -6,23 +6,23 @@ create elements from JSON objects
 a quick tour:
 -------------
 
-check it out, start a server. open in browser. index.html (which has an empty body) loads the app.
-app.js requires jquery and the tagr files tagr and walkr and gets js/mock.json
-take a look at mock.json, that is what gets converted into the HTML that then populates the index.html body
+Check it out, start a server, open in browser. index.html (which has an empty body) loads the app.
+js/app.js (requires jquery and the tagr files js/tagr.js and js/walkr.js) $.gets js/mock.json
+Look at js/mock.json, this gets converted into the HTML that populates the index.html body
 
 how it works:
 -------------
 
-tagr makes dom elements from formatted JSON via "\__element__" and "\__contains__" properties
+tagr makes DOM elements from formatted JSON via "\__element__" and "\__contains__" properties
 
-"\__element__" values are valid HTML elements, including div, span, input, etc
-assign id's, classes, events and otherwise use $ object creation syntax like this
+"\__element__" values are valid HTML elements, including div, span, input, etc.
+Assign id's, classes, events and otherwise use $ object creation syntax
 (property names are not required to have double quotes unless JSON specific):
 
 ```
 {
   "__element__": "div"
-  "click": function(e){alert("YES")},
+  "click": function(e){alert("YES")}, //events only work if using real JS objects, not JSON!!!
   "id": "test",
   "addClass": "clickable"
 }
