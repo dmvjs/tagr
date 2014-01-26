@@ -13,9 +13,9 @@ take a look at mock.json, that is what gets converted into the HTML that then po
 how it works:
 -------------
 
-tagr makes dom elements from formatted JSON via __element__ and __contains__ properties
+tagr makes dom elements from formatted JSON via "__element__" and "__contains__" properties
 
-__element__ values are valid HTML elements, including div, span, input, etc
+"__element__" values are valid HTML elements, including div, span, input, etc
 assign id's, classes, events and otherwise use $ object creation syntax like this
 (property names are not required to have double quotes unless JSON specific):
 
@@ -28,9 +28,9 @@ assign id's, classes, events and otherwise use $ object creation syntax like thi
 }
 ```
 
-__contains__ values should be another array of objects formatted like the above, where
+"__contains__" values should be another array of objects formatted like the above, where
 the parent object will contain the child in the rendered HTML (pretty obvious)
 
 
-the tagr walks the object and assigns __parent__ property for contained elements
-if no __parent__ property exists, the parent is $(document.body)
+the tagr walks the object and assigns "__parent__" property for contained elements
+if no "__parent__" property exists, the parent is $(document.body)
