@@ -3,7 +3,7 @@
     "__element__": "div",
     "addClass": "example",
     "click" : {
-      "__function__": "function() {alert('CLICK')}"
+      "__function__": "function(e) {console.log(e.currentTarget);}"
     },
     "css": {
       "border": "2px solid red"

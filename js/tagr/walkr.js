@@ -1,6 +1,7 @@
 define(["jquery", "tagr/tagr"], function($, tagr) {
     return function walkr(index, element) {
       var el = element.__element__,
+        exclude = ["__contains__", "__element__", "__parent__"],
         parent = element.__parent__ || $(document.body),
         options = {},
         key,
@@ -8,14 +9,11 @@ define(["jquery", "tagr/tagr"], function($, tagr) {
 
       for (key in element) {
         if (element.hasOwnProperty(key)) {
-          if (key !== "__contains__" && key !== "__element__") {
+          if ($.inArray(key, exclude) === -1) {
             if (element[key]["__function__"]) {
               var f = element[key]["__function__"];
-              if (f.substr(0, 8) === "function") {
-                options[key] = new Function('return ' + f)();
-              } else {
-                options[key] = new Function('return ' + f);
-              }
+              options[key] = (f.substr(0, 8) === "function") ? (new Function('return ' + f)()) :
+                (new Function('return ' + f));
             } else {
               options[key] = element[key]
             }
