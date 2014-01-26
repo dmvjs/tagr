@@ -16,17 +16,19 @@ how it works:
 tagr makes DOM elements from formatted JSON via "\__element__" and "\__contains__" properties
 
 "\__element__" values are valid HTML elements, including div, span, input, etc.
-Assign id's, classes, events and otherwise use $ object creation syntax
-(property names are not required to have double quotes unless JSON specific):
+Assign id's, classes, events and otherwise use $ object creation syntax.
 
 ```
 {
-  "__element__": "div"
-  "click": function(e){alert("YES")}, //events passed via JSON have different syntax, see js/mock.json
-  "id": "test",
-  "addClass": "clickable"
+  __element__: "div"
+  click: function(e){alert("YES")},
+  id: "test",
+  addClass: "clickable"
 }
 ```
+Note: this example uses a JS native object, JSON format differs slightly:
+1. double quotes are required for property names, inner double quotes must be escaped
+2. passing functions requires a different syntax, detailed below in 'passing functions'
 
 "\__contains__" values should be another array of objects formatted like the above, where
 the parent object will contain the child in the rendered HTML (pretty obvious)
