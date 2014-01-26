@@ -1,25 +1,25 @@
 [
   {
-    "element": "div",
+    "__element__": "div",
     "addClass": "example",
     "css": {
       "border": "2px solid red"
     },
-    "contains": [{
-      "element": "input",
+    "__contains__": [{
+      "__element__": "input",
       "placeholder": "This is an input"
     }, {
-      "element": "div",
+      "__element__": "div",
       "text": "This is a div.",
       "css": {
         "padding": "20px",
         "backgroundColor": "yellow"
       },
-      "contains": [{
-        "element": "div",
+      "__contains__": [{
+        "__element__": "div",
         "text": "This is another DIV"
       }, {
-        "element": "div",
+        "__element__": "div",
         "css": {
           "backgroundColor": "blue",
           "color": "white"
@@ -29,26 +29,26 @@
     }]
   },
   {
-    "element": "div",
+    "__element__": "div",
     "addClass": "example",
     "css": {
       "border": "2px solid red"
     },
-    "contains": [{
-      "element": "input",
+    "__contains__": [{
+      "__element__": "input",
       "placeholder": "This is an input"
     }, {
-      "element": "div",
+      "__element__": "div",
       "text": "This is a div.",
       "css": {
         "padding": "20px",
         "backgroundColor": "yellow"
       },
-      "contains": [{
-        "element": "div",
+      "__contains__": [{
+        "__element__": "div",
         "text": "This is another DIV"
       }, {
-        "element": "div",
+        "__element__": "div",
         "css": {
           "backgroundColor": "blue",
           "color": "white"
