@@ -27,10 +27,15 @@ define(["jquery", "tagr/tagr", "tagr/config"], function($, tagr, config) {
 
       fragment = tagr(el, options);
 
-      if (element["__contains__"] !== undefined && element["__contains__"].length) {
-        $(element["__contains__"]).each(function (ind, ele) {
-          ele["__parent__"] = fragment;
-        }).each(walkr);
+      if (element["__contains__"] !== undefined) {
+        if ($.isArray(element["__contains__"])) {
+          $(element["__contains__"]).each(function (ind, ele) {
+            ele["__parent__"] = fragment;
+          }).each(walkr);
+        } else {
+          element["__contains__"]["__parent__"] = fragment;
+          walkr(0, element["__contains__"]);
+        }
       }
 
       parent.append(fragment);
