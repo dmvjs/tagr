@@ -1,65 +1,83 @@
 [
   {
     "__element__": "div",
-    "addClass": "example",
-    "click" : {
-      "__function__": "function(e) {console.log(e.currentTarget);}"
-    },
-    "css": {
-      "border": "2px solid red"
-    },
+    "addClass": "container",
     "__contains__": [{
-      "__element__": "input",
-      "placeholder": "This is an input"
-    }, {
       "__element__": "div",
-      "text": "This is a div.",
-      "css": {
-        "padding": "20px",
-        "backgroundColor": "yellow"
-      },
+      "addClass": "col-md-12",
       "__contains__": [{
         "__element__": "div",
-        "text": "This is another DIV"
-      }, {
-        "__element__": "div",
-        "css": {
-          "backgroundColor": "blue",
-          "color": "white"
-        },
-        "text": "This is another another div."
-      }]
-    }]
-  },
-  {
-    "__element__": "div",
-    "addClass": "example",
-    "click" : {
-      "__function__": "alert('TAGR ELEMENT CLICKED')"
-    },
-    "css": {
-      "border": "2px solid red"
-    },
-    "__contains__": [{
-      "__element__": "input",
-      "placeholder": "This is an input"
-    }, {
-      "__element__": "div",
-      "text": "This is a div.",
-      "css": {
-        "padding": "20px",
-        "backgroundColor": "yellow"
-      },
-      "__contains__": [{
-        "__element__": "div",
-        "text": "This is another DIV"
-      }, {
-        "__element__": "div",
-        "css": {
-          "backgroundColor": "blue",
-          "color": "white"
-        },
-        "text": "This is another another div."
+        "addClass": "tagr-example",
+        "__contains__": [
+          {
+            "__element__": "form",
+            "role": "form",
+            "__contains__": [{
+              "__element__": "div",
+              "addClass": "form-group",
+              "__contains__": [{
+                "__element__": "label",
+                "text": "Email address",
+                "for": "exampleInputEmail1"
+              }, {
+                "__element__": "input",
+                "placeholder": "Enter email",
+                "addClass": "form-control",
+                "type": "email",
+                "id": "exampleInputEmail1"
+              }
+              ]
+            }, {
+              "__element__": "div",
+              "addClass": "form-group",
+              "__contains__": [{
+                "__element__": "label",
+                "text": "Password",
+                "for": "exampleInputPassword1"
+              }, {
+                "__element__": "input",
+                "placeholder": "Password",
+                "addClass": "form-control",
+                "type": "password",
+                "id": "exampleInputPassword1"
+              }
+              ]
+            }, {
+              "__element__": "div",
+              "addClass": "form-group",
+              "__contains__": [{
+                "__element__": "label",
+                "text": "File input",
+                "for": "exampleInputFile"
+              }, {
+                "__element__": "input",
+                "addClass": "form-control",
+                "type": "file",
+                "id": "exampleInputFile"
+              }, {
+                "__element__": "p",
+                "addClass": "help-block",
+                "text": "Example block-level help text here."
+              }
+              ]
+            }, {
+              "__element__": "div",
+              "addClass": "checkbox",
+              "__contains__": [{
+                "__element__": "label",
+                "text": "Check me out.",
+                "__contains__": [{
+                  "__element__": "input",
+                  "type": "checkbox"
+                }]
+              }]
+            }, {
+              "__element__": "button",
+              "type": "submit",
+              "addClass": "btn btn-default",
+              "text": "Submit"
+            }]
+          }]
       }]
     }]
   }
