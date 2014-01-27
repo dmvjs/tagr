@@ -8,76 +8,72 @@
       "__contains__": [{
         "__element__": "div",
         "addClass": "tagr-example",
-        "__contains__": [
-          {
-            "__element__": "form",
-            "role": "form",
+        "__contains__": [{
+          "__element__": "form",
+          "role": "form",
+          "__contains__": [{
+            "__element__": "div",
+            "addClass": "form-group",
             "__contains__": [{
-              "__element__": "div",
-              "addClass": "form-group",
-              "__contains__": [{
-                "__element__": "label",
-                "text": "Email address",
-                "for": "exampleInputEmail1"
-              }, {
-                "__element__": "input",
-                "placeholder": "Enter email",
-                "addClass": "form-control",
-                "type": "email",
-                "id": "exampleInputEmail1"
-              }
-              ]
+              "__element__": "label",
+              "text": "Email address",
+              "for": "exampleInputEmail1"
             }, {
-              "__element__": "div",
-              "addClass": "form-group",
-              "__contains__": [{
-                "__element__": "label",
-                "text": "Password",
-                "for": "exampleInputPassword1"
-              }, {
-                "__element__": "input",
-                "placeholder": "Password",
-                "addClass": "form-control",
-                "type": "password",
-                "id": "exampleInputPassword1"
-              }
-              ]
-            }, {
-              "__element__": "div",
-              "addClass": "form-group",
-              "__contains__": [{
-                "__element__": "label",
-                "text": "File input",
-                "for": "exampleInputFile"
-              }, {
-                "__element__": "input",
-                "addClass": "form-control",
-                "type": "file",
-                "id": "exampleInputFile"
-              }, {
-                "__element__": "p",
-                "addClass": "help-block",
-                "text": "Example block-level help text here."
-              }
-              ]
-            }, {
-              "__element__": "div",
-              "addClass": "checkbox",
-              "__contains__": [{
-                "__element__": "label",
-                "text": "Check me out.",
-                "__contains__": [{
-                  "__element__": "input",
-                  "type": "checkbox"
-                }]
-              }]
-            }, {
-              "__element__": "button",
-              "type": "submit",
-              "addClass": "btn btn-default",
-              "text": "Submit"
+              "__element__": "input",
+              "placeholder": "Enter email",
+              "addClass": "form-control",
+              "type": "email",
+              "id": "exampleInputEmail1"
             }]
+          }, {
+            "__element__": "div",
+            "addClass": "form-group",
+            "__contains__": [{
+              "__element__": "label",
+              "text": "Password",
+              "for": "exampleInputPassword1"
+            }, {
+              "__element__": "input",
+              "placeholder": "Password",
+              "addClass": "form-control",
+              "type": "password",
+              "id": "exampleInputPassword1"
+            }]
+          }, {
+            "__element__": "div",
+            "addClass": "form-group",
+            "__contains__": [{
+              "__element__": "label",
+              "text": "File input",
+              "for": "exampleInputFile"
+            }, {
+              "__element__": "input",
+              "addClass": "form-control",
+              "type": "file",
+              "id": "exampleInputFile"
+            }, {
+              "__element__": "p",
+              "addClass": "help-block",
+              "text": "Example block-level help text here."
+            }]
+          }, {
+            "__element__": "div",
+            "addClass": "checkbox",
+            "__contains__": [{
+              "__element__": "label",
+              "text": "Check me out.",
+              "__contains__": [{
+                "__element__": "input",
+                "type": "checkbox"
+              }]
+            }]
+          }, {
+            "__element__": "button",
+            "type": "submit",
+            "addClass": "btn btn-default",
+            "text": "Submit"
           }]
+        }]
       }]
     }]
   }
