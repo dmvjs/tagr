@@ -14,7 +14,11 @@ requirejs(["jquery", "tagr/tagr", "tagr/walkr"],
     });
 
     function onDataLoaded(data) {
-      $(data).each(walkr);
+      if ($.isArray(data)) {
+        $(data).each(walkr);
+      } else {
+        walkr(0, data);
+      }
     }
   }
 );
