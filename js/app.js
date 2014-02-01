@@ -5,20 +5,19 @@ requirejs.config({
   }
 });
 
-requirejs(["jquery", "tagr/tagr", "tagr/walkr"],
-  function ($, tagr, walkr) {
-    $.ajax({
-      url: "js/mock.json",
-      dataType: "json",
-      success: onDataLoaded
-    });
+requirejs(["tagr/tagr", "tagr/walkr"],
+  function (tagr, walkr) {
+    var request = new XMLHttpRequest;
+    request.open('GET', 'js/mock.json', true);
+    request.send();
 
-    function onDataLoaded(data) {
-      if ($.isArray(data)) {
-        $(data).each(walkr);
+    request.onload = function onDataLoaded() {
+      var data = JSON.parse(this.response);
+      if (Array.isArray(data)) {
+        Array.prototype.forEach.call(data, walkr)
       } else {
         walkr(0, data);
       }
-    }
+    };
   }
 );
