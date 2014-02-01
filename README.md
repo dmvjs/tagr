@@ -1,7 +1,7 @@
 tagr
 ====
 
-create elements from JSON objects
+create elements from JSON objects, compat with IE9+
 
 a quick tour:
 -------------
@@ -61,3 +61,7 @@ Alternatively a single statement can be passed as follows.
       "__function__": "alert('TAGR JSON EVENT')"
     },
 ```
+
+The full list of supported events is available at the top of tagr.js. Adding an item to this array and recompiling
+will add support for that event. Be careful not to list events that have HTML attribute names as this will block
+those attributes from being created properly.
