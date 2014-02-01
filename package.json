@@ -2,7 +2,7 @@
   "name": "tagr-json-to-html",
   "version": "0.0.2",
   "description": "JSON to HTML elements with function passing IE9+",
-  "main": "break.js",
+  "main": "bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
