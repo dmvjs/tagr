@@ -7,7 +7,7 @@ a quick tour:
 -------------
 
 Check it out, start a server, open in browser. index.html (which has an empty body) loads the app.
-js/app.js (requires jquery and the tagr files js/tagr.js and js/walkr.js) $.gets js/mock.json
+js/app.js (requires the tagr files js/tagr.js and js/walkr.js) gets js/mock.json
 Look at js/mock.json, this gets converted into the HTML that populates the index.html body
 
 how it works:
