@@ -37,6 +37,8 @@ module.exports = function tagr(element, options) {
           el.classList.addClasses(options[prop]);
         else
           el.className += ' ' + options[prop]
+      } else if ((prop === 'html')) {
+        el.innerHTML = options[prop]
       } else if ((prop === 'text') || (prop === 'innerText') || prop === 'textContent') {
         if (el.textContent)
           el.textContent = options[prop];
