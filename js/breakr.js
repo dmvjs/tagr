@@ -2,7 +2,7 @@ var walkr = require("./walkr")
   , request = new XMLHttpRequest
   ;
 
-request.open("GET", "js/mock.json", true);
+request.open("GET", "../json/mock.json", true);
 request.send();
 request.onload = function() {
   breakr(this.response);
