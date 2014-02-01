@@ -1,6 +1,6 @@
 define(function() {
 
-    if (DOMTokenList.prototype['addClasses'] === undefined) {
+    if (DOMTokenList && DOMTokenList.prototype['addClasses'] === undefined) {
       DOMTokenList.prototype.addClasses = function(classes) {
         var array = classes.split(' ')
           , i
