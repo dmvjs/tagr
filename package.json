@@ -1,11 +1,8 @@
 {
   "name": "tagr-json-to-html",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "JSON to HTML elements with function passing IE9+",
   "main": "bundle.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dmvjs/tagr.git"
@@ -16,9 +13,5 @@
     "pass",
     "functions"
   ],
-  "author": "Kirk Elliott <kirk@dmvjs.com> (http://dmvjs.com/)",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/dmvjs/tagr/issues"
-  }
+  "author": "Kirk Elliott <kirk@dmvjs.com> (http://dmvjs.com/)"
 }
